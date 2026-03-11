@@ -1,0 +1,456 @@
+@import url('variables.css');
+
+body {
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+    color: var(--text-main);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    box-sizing: border-box;
+    padding: 35px 7.5vw;
+}
+
+.container-left {
+    width: 70%;
+    height: auto;
+    padding: 25px 25px;
+    border: solid 1px var(--border-red);
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 20px;
+    align-self: flex-start;
+}
+
+.placed-order {
+    width: 60%;
+    height: auto;
+    padding: 5px 1.5vw;
+    background-color: var(--white);
+    border-radius: 0px;
+    float: left;
+    gap: 20px;
+}
+
+.placed-order hr {
+    width: 100%;
+    border: solid 1px var(--orange-bright);
+}
+
+.placed-title {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.placed-title h3,
+.placed-title h4 {
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+    font-weight: 600;
+}
+
+.add-order {
+    width: 39%;
+    background-color: var(--white);
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 5px 1.5vw;
+    padding-bottom: 20px;
+}
+
+.add-order h3 {
+    font-weight: 600;
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.add-order label del,
+.add-order label span {
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+}
+
+.add-order label del {
+    color: var(--text-disabled);
+}
+
+.add-order label span {
+    color: var(--price-color);
+}
+
+.course-add {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 20px;
+    padding: 10px;
+    background-color: var(--bg-subtle-gray);
+    border-bottom: solid 1px var(--border-gray);
+}
+
+.course-add img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 4px;
+    float: left;
+}
+
+.course-add-price {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.course-add-price h4,
+.course-add-price label {
+    line-height: 1;
+    margin: 0;
+}
+
+.course-add button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: var(--button-hover-color);
+    color: var(--white);
+    margin-left: auto;
+    float: right;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+
+.ordered-course {
+    width: 100%;
+    height: auto;
+}
+
+.course {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 3px 10px;
+    box-sizing: border-box;
+    gap: 15px;
+}
+
+.course img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.ordered-course hr {
+    width: 100%;
+    border: solid 1px var(--border-gray);
+}
+
+.price {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    float: left;
+}
+
+.price label,
+.price del {
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+}
+
+.course button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: var(--border-gray);
+    color: var(--button-color);
+    border-radius: 50%;
+    float: right;
+    margin-left: auto;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.cost {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.cost label,
+.cost h3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+}
+
+.cost label span,
+.placed-order h3 span {
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+}
+
+#cost-subtotal,
+#cost-fee {
+    color: var(--text-disabled);
+}
+
+#cost-discount {
+    color: var(--price-color);
+}
+
+.cost h3,
+.cost h3 span {
+    font-weight: 600;
+}
+
+.cost h3 span {
+    color: var(--orange-bright);
+}
+
+.container-right {
+    width: 28%;
+    height: auto;
+    padding: 5px 5px;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.payment {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px;
+    gap: 10px;
+    border: solid 1px var(--border-red);
+}
+
+.payment h3 {
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+}
+
+.payment hr {
+    width: 100%;
+    border: solid 1px var(--border-very-subtle);
+}
+
+#price label span {
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+    color: var(--price-color);
+}
+
+.payment-method {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.payment-method button {
+    width: 48%;
+    height: var(--button-height);
+    border-radius: 5px;
+    background-color: var(--button-color);
+    color: var(--white);
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#acleda {
+    background-color: var(--gray-light);
+    color: var(--button-color);
+}
+
+#acleda:hover {
+    background-color: var(--button-hover-color);
+    color: var(--white);
+}
+
+.payment-method button:hover {
+    background-color: var(--button-hover-color);
+}
+
+.visa-payment,
+.visa-address {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.payment label {
+    font-size: 22px;
+    font-weight: 500;
+    margin-left: 10px;
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+}
+
+.visaCARD,
+.acledaKHQR {
+    width: 100%;
+    height: auto;
+}
+
+.acledaKHQR img {
+    width: 100%;
+}
+
+.visa-payment input {
+    padding: 0 20px;
+    height: var(--button-height);
+    border-radius: 5px;
+    border: none;
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#cardNumber {
+    width: 100%;
+}
+
+#expirationDate {
+    width: 67.5%;
+}
+
+#securityCode {
+    width: 29%;
+}
+
+.visa-address {
+    flex-direction: column;
+}
+
+.visa-address input {
+    width: 100%;
+    padding: 0 20px;
+    height: var(--button-height);
+    border-radius: 5px;
+    border: none;
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.select-country {
+    width: 100%;
+    background: var(--white);
+    padding: 0 20px;
+    height: var(--button-height);
+    border-radius: 5px;
+    color: var(--text-gray);
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.select-country label {
+    display: block;
+    font-size: 14px;
+    color: var(--border-gray);
+    margin-bottom: 5px;
+}
+
+.select-country select {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: var(--black);
+    font-size: 16px;
+    outline: none;
+    appearance: none;
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+}
+
+.select-country option {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+}
+
+#submitCardBtn {
+    width: 100%;
+    height: var(--button-height);
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--button-color);
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+    font-size: 14px;
+}
+
+#submitCardBtn:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .container-left,
+    .container-right {
+        width: 100%;
+    }
+
+    .container-left {
+        flex-direction: column;
+    }
+
+    .placed-order, .add-order {
+        width: 100%;
+        float: none;
+    }
+}
+
+@media (max-width: 520px) {
+    .payment-method {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .payment-method button {
+        width: 100%;
+    }
+
+    #cardNumber, #expirationDate, #securityCode {
+        width: 100%;
+    }
+}

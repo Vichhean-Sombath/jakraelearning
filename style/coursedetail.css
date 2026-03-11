@@ -1,0 +1,491 @@
+@import url('variables.css');
+
+body {
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+    color: var(--text-main);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.header-actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    box-sizing: border-box;
+    padding: 35px 7.5vw;
+}
+
+.container-left {
+    width: 70%;
+    height: auto;
+    padding: 25px 25px;
+    border: solid 1px var(--border-red);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-left img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.course-description {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.course-description h2 {
+    color: var(--title-color);
+    font-size: 32px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.course-description h3 {
+    color: var(--title-color);
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--border-divider);
+}
+
+.course-description p {
+    font-size: 16px;
+    color: var(--text-secondary);
+    line-height: 1.9;
+    margin-bottom: 16px;
+}
+
+.course-description ul,
+.course-description ol {
+    margin-top: 5px;
+    margin-bottom: 25px;
+    padding-left: 25px;
+    text-align: justify;
+}
+
+.course-description li {
+    font-size: 16px;
+    list-style: none;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.course-description strong {
+    color: var(--title-color);
+    font-weight: 400;
+}
+
+.course-description p em {
+    display: block;
+    margin-top: 30px;
+    padding: 15px 20px;
+    background-color: var(--lightPurple-background-color);
+    border-left: 4px solid var(--title-color);
+    border-radius: var(--border-radius);
+    color: var(--text-main);
+    font-style: normal;
+    font-weight: 500;
+}
+
+.container-right {
+    width: 28%;
+    height: auto;
+    padding: 5px 5px;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.teacher,
+.curriculum,
+.payment,
+.rating {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px;
+    gap: 10px;
+    border: solid 1px var(--border-red);
+}
+
+.teacher hr,
+.curriculum hr,
+.payment hr,
+.rating hr {
+    width: 100%;
+    border: solid 1px var(--border-very-subtle);
+}
+
+.teacher-profile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.teacher-profile img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+
+.teacher-name {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.teacher-description,
+.curriculum-description {
+    width: 100%;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.teacher-description label,
+.curriculum-description label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#price label span {
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+    color: var(--price-color);
+}
+
+.teacher-description label span {
+    color: var(--border-gray);
+}
+
+.teacher-description label del {
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+    color: var(--text-disabled);
+}
+
+.curriculum-description label button {
+    width: 35%;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--button-secondary-bg);
+}
+
+.curriculum-description label button a {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width: 100%;
+    height: 100%;
+}
+
+.teacher button,
+.curriculum button,
+#submitCardBtn {
+    width: 100%;
+    height: var(--button-height);
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--button-color);
+}
+
+.curriculum button a {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.teacher button:hover,
+.curriculum button:hover,
+#submitCardBtn:hover {
+    background-color: var(--button-hover-color);
+}
+
+.curriculum h3,
+.payment h3,
+.rating h3 {
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+#viewAllLesson,
+#registerBtn {
+    margin-top: 30px;
+}
+
+.payment-method {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.payment-method button {
+    width: 48%;
+    height: var(--button-height);
+    border-radius: 5px;
+    background-color: var(--button-color);
+    color: var(--white);
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#acleda {
+    background-color: var(--gray-light);
+    color: var(--button-color);
+}
+
+#acleda:hover {
+    background-color: var(--button-hover-color);
+    color: var(--white);
+}
+
+.payment-method button:hover {
+    background-color: var(--button-hover-color);
+}
+
+.visa-payment,
+.visa-address {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.payment label {
+    font-size: 22px;
+    font-weight: 500;
+    margin-left: 10px;
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+}
+
+.visaCARD,
+.acledaKHQR {
+    width: 100%;
+    height: auto;
+}
+
+.acledaKHQR img {
+    width: 100%;
+}
+
+.visa-payment input {
+    padding: 0 20px;
+    height: var(--button-height);
+    border-radius: 5px;
+    border: none;
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#cardNumber {
+    width: 100%;
+}
+
+#expirationDate {
+    width: 67.5%;
+}
+
+#securityCode {
+    width: 29%;
+}
+
+.visa-address {
+    flex-direction: column;
+}
+
+.visa-address input {
+    width: 100%;
+    padding: 0 20px;
+    height: var(--button-height);
+    border-radius: 5px;
+    border: none;
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.select-country {
+    width: 100%;
+    background: var(--white);
+    padding: 0 20px;
+    height: var(--button-height);
+    border-radius: 5px;
+    color: var(--text-gray);
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.select-country label {
+    display: block;
+    font-size: 14px;
+    color: var(--border-gray);
+    margin-bottom: 5px;
+}
+
+.select-country select {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: var(--black);
+    font-size: 16px;
+    outline: none;
+    appearance: none;
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+}
+
+.select-country option {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+}
+
+#submitCardBtn {
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+    font-size: 14px;
+}
+
+.rating h2 {
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+    font-family: 12px;
+    font-weight: 700;
+}
+
+.rating p {
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+}
+
+.rating-star {
+    width: 100%;
+    display: flex;
+    gap: 1px;
+    align-items: center;
+}
+
+.rating-star i {
+    font-size: 18px;
+    color: var(--orange-bright);
+}
+
+.bar-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.bar-row span {
+    font-family: 'SiteFont', 'Inter', 'Bayon', sans-serif;
+}
+
+.star-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-dark-muted);
+    min-width: 30px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.star-label i {
+    color: var(--star-yellow);
+    font-size: 12px;
+}
+
+.bar-track {
+    flex: 1;
+    height: 8px;
+    background: var(--track-gray);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    width: 0%;
+    background: var(--star-yellow);
+    border-radius: 999px;
+    transition: 0.5s ease;
+}
+
+.count-label {
+    font-size: 12px;
+    color: #999;
+    min-width: 55px;
+    text-align: right;
+}
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .container-left,
+    .container-right {
+        width: 100%;
+    }
+
+    .container-left img {
+        height: auto;
+        max-height: 400px;
+    }
+}
+
+@media (max-width: 520px) {
+    .payment-method {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .payment-method button {
+        width: 100%;
+    }
+
+    #cardNumber, #expirationDate, #securityCode {
+        width: 100%;
+    }
+}
